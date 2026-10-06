@@ -8,7 +8,7 @@ Broadcast frames are not forwarded outside a vlan
 These are switchports that carry traffic of a single vlan, usually connects end hosts
 
 ### Below is an access port configuration
-Nine PCs, One Multilayer Switch, One Router
+Nine PCs, One Switch, One Router
 <img width="1406" height="905" alt="image" src="https://github.com/user-attachments/assets/1f8917ea-fafb-4335-a09f-6b6f13dc6358" />
 NOTE: for the default gateways, i used the last usable host
 
@@ -19,3 +19,8 @@ These are switchports that carry traffic of a multiple vlans, on on interface
 Eight PCs, Two Switches, One Router
 <img width="2038" height="933" alt="image" src="https://github.com/user-attachments/assets/623eeb4f-5408-49ba-af7a-e89d50ee97e8" />
 NOTE: for the default gateways, i used the last usable host
+
+## Router on a Stick
+Instead of having multiple connections for each vlan on separate interfaces, we can use one connections with multiple sub-interfaces as default gateways.
+Below i used sub-interface G0/0.10 FOR VLAN 10, G0/0.20 FOR VLAN 20, G0/0.30 FOR VLAN 30
+<img width="1747" height="906" alt="image" src="https://github.com/user-attachments/assets/d67478e7-129a-4a9c-83ea-ba5855b02b7e" />
